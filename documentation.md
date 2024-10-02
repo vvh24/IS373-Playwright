@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playwright and Hexo Documentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-size: 1.1em;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Playwright and Hexo Documentation</h1>
+<h1>Playwright and Hexo Documentation</h1>
 
     <h2>1. What is Playwright?</h2>
     <p>Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), take screenshots, and verify if certain text appears on the page.</p>
@@ -148,6 +117,3 @@ const { chromium } = require('playwright');
     </ol>
 
     <p>Playwright uses "headless browsers" by default (which means no graphical interface), but you can also run it with real browsers (like the ones you normally use).</p>
-
-</body>
-</html>
