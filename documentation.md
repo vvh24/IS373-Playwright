@@ -1,22 +1,22 @@
 <h1>Playwright and Hexo Documentation</h1>
+<h2>1. What is Playwright?</h2>
+Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), 
+take screenshots, and verify if certain text appears on the page. With Playwright, you can automate repetitive tasks and test your website without manually doing it. 
+This saves time and ensures that your website behaves correctly every time you make changes.
 
-    <h2>1. What is Playwright?</h2>
-        Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), take screenshots, and verify if certain text appears on the page.
-    With Playwright, you can automate repetitive tasks and test your website without manually doing it. This saves time and ensures that your website behaves correctly every time you make changes.
+<h2>2. How to Set Up Playwright</h2>
 
-    <h2>2. How to Set Up Playwright</h2>
+<h3>Step 1: Install Node.js</h3>
+Before setting up Playwright, you need to have Node.js installed. Download it from <a href="https://nodejs.org/">here</a>
 
-    <h3>Step 1: Install Node.js</h3>
-        Before setting up Playwright, you need to have Node.js installed. Download it from <a href="https://nodejs.org/">here</a>
-
-    <h3>Step 2: Create a Folder for Playwright</h3>
+<h3>Step 2: Create a Folder for Playwright</h3>
 <code>
 mkdir my-playwright-tests
 cd my-playwright-tests
 </code>
 
-    <h3>Step 3: Install Playwright</h3>
-        Inside the folder, install Playwright by running these commands:
+<h3>Step 3: Install Playwright</h3>
+Inside the folder, install Playwright by running these commands:
 <code>
 npm init -y  # Initialize a Node.js project
 npm install playwright  # Install Playwright
