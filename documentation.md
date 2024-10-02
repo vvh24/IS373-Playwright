@@ -1,4 +1,4 @@
-<h1>Playwright and Hexo Documentation</h1>
+<h1>Playwright Documentation</h1>
 <h2>1. What is Playwright?</h2>
 Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), 
 take screenshots, and verify if certain text appears on the page. With Playwright, you can automate repetitive tasks and test your website without manually doing it. 
@@ -34,7 +34,6 @@ Playwright allows you to control a browser using JavaScript. You write scripts t
 Here's a simple Playwright script:
 <code>
 const { chromium } = require('playwright');
-
 (async () => {
     const browser = await chromium.launch();  // Launch the browser
     const page = await browser.newPage();  // Open a new tab
