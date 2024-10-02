@@ -1,42 +1,36 @@
 <h1>Playwright and Hexo Documentation</h1>
 
     <h2>1. What is Playwright?</h2>
-    <p>Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), take screenshots, and verify if certain text appears on the page.</p>
-    <p>With Playwright, you can automate repetitive tasks and test your website without manually doing it. This saves time and ensures that your website behaves correctly every time you make changes.</p>
+        Playwright is a tool that automates web browsers. This means it can open a website, interact with it (like clicking on buttons, filling out forms), take screenshots, and verify if certain text appears on the page.
+    With Playwright, you can automate repetitive tasks and test your website without manually doing it. This saves time and ensures that your website behaves correctly every time you make changes.
 
     <h2>2. How to Set Up Playwright</h2>
 
     <h3>Step 1: Install Node.js</h3>
-    <p>Before setting up Playwright, you need to have Node.js installed. Download it from <a href="https://nodejs.org/">here</a>.</p>
+        Before setting up Playwright, you need to have Node.js installed. Download it from <a href="https://nodejs.org/">here</a>
 
     <h3>Step 2: Create a Folder for Playwright</h3>
-    <pre>
 <code>
 mkdir my-playwright-tests
 cd my-playwright-tests
 </code>
-    </pre>
 
     <h3>Step 3: Install Playwright</h3>
-    <p>Inside the folder, install Playwright by running these commands:</p>
-    <pre>
+        Inside the folder, install Playwright by running these commands:
 <code>
 npm init -y  # Initialize a Node.js project
 npm install playwright  # Install Playwright
 </code>
-    </pre>
 
     <h2>3. How Playwright Works</h2>
-    <p>Playwright allows you to control a browser using JavaScript. You write scripts that tell the browser to do things like:</p>
+        Playwright allows you to control a browser using JavaScript. You write scripts that tell the browser to do things like:
     <ul>
         <li>Open a website.</li>
         <li>Click on buttons or links.</li>
         <li>Take a screenshot of the page.</li>
         <li>Verify if text or an element exists on the page.</li>
     </ul>
-    <p>Here's a simple Playwright script:</p>
-
-    <pre>
+        Here's a simple Playwright script:
 <code>
 const { chromium } = require('playwright');
 
@@ -48,13 +42,12 @@ const { chromium } = require('playwright');
     await browser.close();  // Close the browser
 })();
 </code>
-    </pre>
 
-    <p>This script will open a browser, go to the website <code>http://example.com</code>, take a screenshot, and then close the browser.</p>
+        This script will open a browser, go to the website <code>http://example.com</code>, take a screenshot, and then close the browser.
 
     <h2>4. Why is Playwright Useful?</h2>
-    <p>Playwright is useful for automating tests on websites. Instead of manually checking if your website is working correctly, Playwright can automatically perform tests and tell you if something is broken.</p>
-    <p>It's also helpful because it:</p>
+    Playwright is useful for automating tests on websites. Instead of manually checking if your website is working correctly, Playwright can automatically perform tests and tell you if something is broken.
+        It's also helpful because it:
     <ul>
         <li>Saves time when testing websites.</li>
         <li>Can simulate real user actions (like clicking and filling forms).</li>
@@ -71,7 +64,7 @@ const { chromium } = require('playwright');
     </ul>
 
     <h2>6. How Playwright Works with Different Applications and Systems</h2>
-    <p>Playwright can work with any web application or system that runs in a browser. It can:</p>
+        Playwright can work with any web application or system that runs in a browser. It can:
     <ul>
         <li>Test different types of websites (blogs, stores, business apps).</li>
         <li>Run on different operating systems (Windows, macOS, Linux).</li>
@@ -79,19 +72,15 @@ const { chromium } = require('playwright');
     </ul>
 
     <h2>7. How Playwright Works with Hexo</h2>
-    <p>Hexo is a tool that generates static websites from markdown files. After you generate the website and run it locally using the command:</p>
-    <pre>
+        Hexo is a tool that generates static websites from markdown files. After you generate the website and run it locally using the command:
 <code>hexo server</code>
-    </pre>
-    <p>Playwright can then open the Hexo site (usually running on <code>http://localhost:4000</code>) and test it. For example, you can use Playwright to:</p>
+    Playwright can then open the Hexo site (usually running on <code>http://localhost:4000</code>) and test it. For example, you can use Playwright to:
     <ul>
         <li>Check if your blog posts are loading correctly.</li>
         <li>Verify that links work.</li>
         <li>Ensure that the website layout is correct.</li>
     </ul>
-    <p>Here’s how Playwright can interact with a Hexo site:</p>
-
-    <pre>
+        Here’s how Playwright can interact with a Hexo site:
 <code>
 const { chromium } = require('playwright');
 
@@ -103,12 +92,11 @@ const { chromium } = require('playwright');
     await browser.close();  // Close the browser
 })();
 </code>
-    </pre>
 
-    <p>In this example, Playwright opens your Hexo site (running locally), takes a screenshot, and closes the browser.</p>
+    In this example, Playwright opens your Hexo site (running locally), takes a screenshot, and closes the browser.
 
     <h2>8. How Playwright Works on Your Computer</h2>
-    <p>Playwright runs through Node.js. When you run a Playwright script:</p>
+        Playwright runs through Node.js. When you run a Playwright script:
     <ol>
         <li><strong>You write a script</strong> that tells the browser what to do.</li>
         <li><strong>You run the script</strong> using Node.js (<code>node script.js</code>).</li>
@@ -116,4 +104,4 @@ const { chromium } = require('playwright');
         <li><strong>Playwright closes the browser</strong> once all the tasks are done.</li>
     </ol>
 
-    <p>Playwright uses "headless browsers" by default (which means no graphical interface), but you can also run it with real browsers (like the ones you normally use).</p>
+        Playwright uses "headless browsers" by default (which means no graphical interface), but you can also run it with real browsers (like the ones you normally use).
